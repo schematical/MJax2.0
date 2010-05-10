@@ -1,0 +1,1 @@
+<?php $_CONTROL->lblMessage->Render(); ?>&nbsp;Email: <?php  $_CONTROL->txtEmail->Render(); ?> &nbsp;Pass: <?php  $_CONTROL->txtPassword->Render(); ?> <?php $_CONTROL->btnSubmit->Render(); ?> <?php $_CONTROL->btnSignUp->Render(); ?>

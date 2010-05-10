@@ -1,0 +1,59 @@
+#MLCChat_window{
+    position:fixed;
+    bottom:30Px;
+    left:3Px;
+    height:250Px;
+    width:300Px;
+    background-color:black;
+    border:thin solid #009900;
+}
+#MLCChat_window_screen{
+    margin:5Px;
+    background-color:#009900;
+    overflow:auto;
+    height:170Px;
+    width:290Px;
+    vertical-align:bottom;
+    font-family:tahoma;
+}
+#MLCChat_window_textArea{
+    font-family:tahoma;
+    margin-top:0Px;
+    height:16Px;
+    width:220Px;
+    background:#009900;
+    border:none;
+    border-top:thin solid #009900;
+    margin-left:5Px;
+}
+#MLCChat_window_sendBtn{
+    height:16Px;
+    width:60Px;
+    background:#009900;
+    border:none;
+    margin:3Px;
+    font-family:tahoma;
+}
+#MLCChat_window_toolBar{
+    position:fixed;
+    bottom:0Px;
+    left:0Px;
+    height:30Px;
+    width:100%;
+    background-color:black;
+    border:thin solid #009900;
+}
+
+.MLCChat_window_sessionDiv{
+    float:left;
+    padding:2Px;
+    margin-right:10Px;
+    background:black;
+    color:#009900;
+    border:thin #009900 solid;
+    cursor:pointer;
+}
+.MLCChat_window_highlighted{
+    font-weight:bolder;
+    border:thick solid #009900;
+}
