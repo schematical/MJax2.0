@@ -1,5 +1,15 @@
-<div id="mainWindow_inner" style="height:500Px;width:500Px;">
+<div id="mainWindow_inner" style="height:400Px;width:500Px;">
     <?php require(__DOCROOT__ . __PHP_ASSETS__ . '/glowBoarder/glowBoarder_start.inc.php'); ?>
-        <img src="<?php _p(__VIRTUAL_DIRECTORY__ . __IMAGE_ASSETS__); ?>/home.comandLine.png" />
+        <div style="height:400Px;position:relative;">
+            <img src="<?php _p(__VIRTUAL_DIRECTORY__ . __IMAGE_ASSETS__); ?>/home.comandLine.png" />
+            <div class="caseStudyPanel_nav">
+                    [mlc]: cd ../<span class="commandLineBlink">&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;<?php $this->btnNext->Render(); ?>
+            </div>
+        </div>
+        <?php foreach($this->arrCaseStudyPanels as $pnlCaseStudy){
+            $pnlCaseStudy->Render();
+        } ?>
+        <script language="javascript" src="<?= __VIRTUAL_DIRECTORY__ . __JS_ASSETS__; ?>/jquery.color.js"></script>
     <?php require(__DOCROOT__ . __PHP_ASSETS__. '/glowBoarder/glowBoarder_end.inc.php'); ?>
+    <?php $this->dlgContact->Render(); ?>
 </div>

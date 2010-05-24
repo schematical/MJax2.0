@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/repos/!svn/ver/208/mattleaconsulting_www/assets/templates/panels
+/repos/!svn/ver/252/mattleaconsulting_www/assets/templates/panels
 END
 MLCPayPalButton.tpl.php
 K 25
@@ -62,6 +62,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 95
 /repos/!svn/ver/208/mattleaconsulting_www/assets/templates/panels/MLCFileAssetInfoPanel.tpl.php
+END
+MLCOpenLikePanel.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/!svn/ver/259/mattleaconsulting_www/assets/templates/panels/MLCOpenLikePanel.class.php
 END
 MLCDatePanel.tpl.php
 K 25

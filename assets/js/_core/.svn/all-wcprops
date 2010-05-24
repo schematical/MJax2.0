@@ -3,93 +3,9 @@ svn:wc:ra_dav:version-url
 V 57
 /repos/!svn/ver/252/mattleaconsulting_www/assets/js/_core
 END
-treenav.js
-K 25
-svn:wc:ra_dav:version-url
-V 68
-/repos/!svn/ver/252/mattleaconsulting_www/assets/js/_core/treenav.js
-END
-qcodo.js
-K 25
-svn:wc:ra_dav:version-url
-V 66
-/repos/!svn/ver/252/mattleaconsulting_www/assets/js/_core/qcodo.js
-END
-control_move.js
-K 25
-svn:wc:ra_dav:version-url
-V 73
-/repos/!svn/ver/252/mattleaconsulting_www/assets/js/_core/control_move.js
-END
-calendar.js
-K 25
-svn:wc:ra_dav:version-url
-V 69
-/repos/!svn/ver/252/mattleaconsulting_www/assets/js/_core/calendar.js
-END
-_qc_packed.js
-K 25
-svn:wc:ra_dav:version-url
-V 71
-/repos/!svn/ver/252/mattleaconsulting_www/assets/js/_core/_qc_packed.js
-END
-logger.js
-K 25
-svn:wc:ra_dav:version-url
-V 67
-/repos/!svn/ver/252/mattleaconsulting_www/assets/js/_core/logger.js
-END
-control.js
-K 25
-svn:wc:ra_dav:version-url
-V 68
-/repos/!svn/ver/252/mattleaconsulting_www/assets/js/_core/control.js
-END
-event.js
-K 25
-svn:wc:ra_dav:version-url
-V 66
-/repos/!svn/ver/252/mattleaconsulting_www/assets/js/_core/event.js
-END
-listbox.js
-K 25
-svn:wc:ra_dav:version-url
-V 68
-/repos/!svn/ver/252/mattleaconsulting_www/assets/js/_core/listbox.js
-END
-post.js
+MJax.js
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/repos/!svn/ver/252/mattleaconsulting_www/assets/js/_core/post.js
-END
-date_time_picker.js
-K 25
-svn:wc:ra_dav:version-url
-V 77
-/repos/!svn/ver/252/mattleaconsulting_www/assets/js/_core/date_time_picker.js
-END
-control_handle.js
-K 25
-svn:wc:ra_dav:version-url
-V 75
-/repos/!svn/ver/252/mattleaconsulting_www/assets/js/_core/control_handle.js
-END
-control_dialog.js
-K 25
-svn:wc:ra_dav:version-url
-V 75
-/repos/!svn/ver/252/mattleaconsulting_www/assets/js/_core/control_dialog.js
-END
-control_resize.js
-K 25
-svn:wc:ra_dav:version-url
-V 75
-/repos/!svn/ver/252/mattleaconsulting_www/assets/js/_core/control_resize.js
-END
-_form.js
-K 25
-svn:wc:ra_dav:version-url
-V 66
-/repos/!svn/ver/252/mattleaconsulting_www/assets/js/_core/_form.js
+/repos/!svn/ver/259/mattleaconsulting_www/assets/js/_core/MJax.js
 END

@@ -1,6 +1,6 @@
 <?php
 require_once("prepend.inc.php");
-class designers extends MJaxForm{
+class designers extends MLCSiteForm{
 
 
 }

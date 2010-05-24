@@ -1,62 +1,171 @@
 9
 
 dir
-0
+259
 http://svn.mattleaconsulting.com/repos/mattleaconsulting_www/assets/js/_core/jquery
 http://svn.mattleaconsulting.com/repos
-add
 
 
 
-
+2010-05-10T19:58:11.008100Z
+259
 
 
 
 svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+
+jquery.easing.1.3.js
+file
+
+
+
+
+2010-04-26T15:14:32.727000Z
+798d7e4438494e2f050ef047a7973a94
+2010-05-10T19:58:11.008100Z
+259
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8268
 
 jquery.timers-1.2.js
 file
 
 
 
-add
 
+2010-05-10T16:23:17.183000Z
 6c034499bbeb34448c249cc475abe221
-
-
+2010-05-10T19:58:11.008100Z
+259
 
 has-props
-has-prop-mods
 
 
 
 
 
 
-copied
-http://svn.mattleaconsulting.com/repos/mattleaconsulting_www/assets/js/jquery/jquery.timers-1.2.js
-252
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3338
+
+ui.selectmenu.js
+file
+
+
+
+
+2010-05-08T05:06:44.368000Z
+711dcfb83ff7eb3998c3c177d821aa43
+2010-05-10T19:58:11.008100Z
+259
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+16470
 
 jquery-1.4.2.min.js
 file
 
 
 
-add
 
+2010-05-10T16:23:16.003000Z
 65b352e1ba79f0e2a3b1e014bc2571af
-
-
+2010-05-10T19:58:11.008100Z
+259
 
 has-props
-has-prop-mods
 
 
 
 
 
 
-copied
-http://svn.mattleaconsulting.com/repos/mattleaconsulting_www/assets/js/jquery/jquery-1.4.2.min.js
-252
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+72328
 

@@ -32,7 +32,6 @@
                     <a href="/freeStuff.php" class="MLC_qtip" content="Want some cool free stuff?" qtarget="bottomMiddle" tooltip="topMiddle" width="200">Free Stuff</a>
                     <a href="/contact.php" class="MLC_qtip" content="Get in contact" qtarget="bottomMiddle" tooltip="topMiddle" width="200">Contact</a>
                     <a href="/about.php" class="MLC_qtip" content="Want to know more about Matt Lea Consulting?" qtarget="bottomMiddle" tooltip="topMiddle" width="200">About</a>
-
                 </div>
             </div>
             <div id="bodyContent">

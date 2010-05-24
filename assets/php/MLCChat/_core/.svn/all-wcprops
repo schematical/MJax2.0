@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/259/mattleaconsulting_www/assets/php/MLCChat/_core
+END
+CookieDriver.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/!svn/ver/259/mattleaconsulting_www/assets/php/MLCChat/_core/CookieDriver.class.php
+END
+Post.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/259/mattleaconsulting_www/assets/php/MLCChat/_core/Post.class.php
+END
+BaseEntity.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/259/mattleaconsulting_www/assets/php/MLCChat/_core/BaseEntity.class.php
+END
+Conn.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/259/mattleaconsulting_www/assets/php/MLCChat/_core/Conn.php
+END
+MLCChatApplicationBase.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/!svn/ver/259/mattleaconsulting_www/assets/php/MLCChat/_core/MLCChatApplicationBase.class.php
+END
+MLCChatResponse.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/!svn/ver/259/mattleaconsulting_www/assets/php/MLCChat/_core/MLCChatResponse.class.php
+END
+LoadDriver.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/259/mattleaconsulting_www/assets/php/MLCChat/_core/LoadDriver.class.php
+END
+MLCChatSession.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/!svn/ver/259/mattleaconsulting_www/assets/php/MLCChat/_core/MLCChatSession.class.php
+END
+MySqlDataConnection.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/!svn/ver/259/mattleaconsulting_www/assets/php/MLCChat/_core/MySqlDataConnection.class.php
+END
+_enum.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/!svn/ver/259/mattleaconsulting_www/assets/php/MLCChat/_core/_enum.php
+END
+BaseEntityCollection.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/!svn/ver/259/mattleaconsulting_www/assets/php/MLCChat/_core/BaseEntityCollection.class.php
+END
+DataConnectionBase.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/!svn/ver/259/mattleaconsulting_www/assets/php/MLCChat/_core/DataConnectionBase.class.php
+END

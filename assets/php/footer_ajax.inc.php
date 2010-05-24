@@ -1,4 +1,3 @@
-]]></control>
     </controls>
     <actions>
         <action>

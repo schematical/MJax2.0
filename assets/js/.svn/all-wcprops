@@ -1,11 +1,23 @@
 K 25
 svn:wc:ra_dav:version-url
 V 51
-/repos/!svn/ver/252/mattleaconsulting_www/assets/js
+/repos/!svn/ver/257/mattleaconsulting_www/assets/js
+END
+jqFancyTransitions.1.7.js
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/259/mattleaconsulting_www/assets/js/jqFancyTransitions.1.7.js
 END
 _README.txt
 K 25
 svn:wc:ra_dav:version-url
 V 63
 /repos/!svn/ver/252/mattleaconsulting_www/assets/js/_README.txt
+END
+MLCSite.js
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/!svn/ver/259/mattleaconsulting_www/assets/js/MLCSite.js
 END
