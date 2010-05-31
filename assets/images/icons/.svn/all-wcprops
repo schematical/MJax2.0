@@ -3,6 +3,12 @@ svn:wc:ra_dav:version-url
 V 61
 /repos/!svn/ver/259/mattleaconsulting_www/assets/images/icons
 END
+Portfolio.png
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/261/mattleaconsulting_www/assets/images/icons/Portfolio.png
+END
 Lab.png
 K 25
 svn:wc:ra_dav:version-url
@@ -44,4 +50,10 @@ K 25
 svn:wc:ra_dav:version-url
 V 70
 /repos/!svn/ver/259/mattleaconsulting_www/assets/images/icons/Home.png
+END
+Contact.png
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/!svn/ver/261/mattleaconsulting_www/assets/images/icons/Contact.png
 END

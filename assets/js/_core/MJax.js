@@ -8,12 +8,29 @@ var MJax = {
     Init:function(){
     var arrLocationParts = document.location.toString().split("/");
         this.strCurrPageUrl = MJax.GetDocAncorLocation();
-
+        
         if(this.strCurrPageUrl != MJax.GetDocRealLocation()){
             document.location = this.strCurrPageUrl;
             return;
         }
         MJax.AutoAdjustHeight(function(){});
+        
+        $('.MJaxLink').click(function(e){
+            var strHref = $(this).attr('href');
+            MJax.LoadMainPage(strHref, {action:'change_page'}, true);
+            e.preventDefault();
+        });
+        //Call back setup
+        this.funMainPageLoad = function(){};
+
+
+        //ControlSpecific
+        $('.MJaxLinkButton').each(function(){
+            var jThis = $(this);
+            jThis.data('href', jThis.attr('href'));
+            jThis.attr('href', 'javascript:');
+        });
+
         
     },
     GetDocAncorLocation:function(){
@@ -123,6 +140,7 @@ var MJax = {
         MJax.UpdateDocLocation();
     },
     LoadMainPageGrowCallback:function(){
+       MJax.funMainPageLoad();
         //alert($("#mainWindow").css('height'));
     },
     TriggerControlEvent:function(objEvent, strSelector, strEvent){
@@ -154,7 +172,7 @@ var MJax = {
 
         var strWidth = $("#mainWindow_inner").css('width');
         var intWidth = parseInt(strWidth.replace('px', ''));
-        var strNewWidth = (intWidth + 20) + "Px";
+        var strNewWidth = (intWidth+3) + "Px";
         
             $("#mainWindow").css('display','block');
 

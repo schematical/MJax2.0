@@ -1,19 +1,21 @@
 <?php
 require_once("prepend.inc.php");
 class lab extends MLCSiteForm{
-     protected $txtAutoComplete = null;
+     protected $txtToolBar = null;
+     protected $btnUpdate = null;
      public function Form_Create(){
-          parent::Form_Create();
-         $this->txtAutoComplete = new MJaxAutoCompleteTextBox($this, 'txtAutoComplete');
-         $this->txtAutoComplete->UseAjax = true;
-         $this->txtAutoComplete->Target = $this;
-         $this->txtAutoComplete->Function = 'txtAutoComplete_update';
+         parent::Form_Create();
+         $this->txtToolBar = new MJaxTextBox($this, 'txtToolBar');
+         $this->txtToolBar->Text = $this->pnlMLCToolBar->Text;
+         $this->btnUpdate = new MJaxLinkButton($this, 'btnUpdate');
+         $this->btnUpdate->Text = 'Update Tool Bar';
+         $this->btnUpdate->AddAction(new MJaxClickEvent(), new MJaxServerControlAction($this, 'btnUpdate_click'));
+
      }
-     public function Form_PreRender(){
-         $this->txtAutoComplete->Modified = false;
-     }
-     public function txtAutoComplete_update($strQuery){
-          return array("alpha", "alfe", "albert", "boner", "charly sheen");
+     public function btnUpdate_click(){
+         $this->SetToolBarText($this->txtToolBar->Text);
+         $this->blnSkipMainWindowRender = true;
+         
      }
 }
 lab::Run('lab');

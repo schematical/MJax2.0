@@ -3,11 +3,35 @@ svn:wc:ra_dav:version-url
 V 51
 /repos/!svn/ver/257/mattleaconsulting_www/assets/js
 END
+jquery.mousewheel.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/261/mattleaconsulting_www/assets/js/jquery.mousewheel.js
+END
+jScrollPane.js
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/!svn/ver/261/mattleaconsulting_www/assets/js/jScrollPane.js
+END
+jquery.color.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/!svn/ver/261/mattleaconsulting_www/assets/js/jquery.color.js
+END
 jqFancyTransitions.1.7.js
 K 25
 svn:wc:ra_dav:version-url
 V 77
 /repos/!svn/ver/259/mattleaconsulting_www/assets/js/jqFancyTransitions.1.7.js
+END
+thickbox-compressed.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/261/mattleaconsulting_www/assets/js/thickbox-compressed.js
 END
 _README.txt
 K 25
@@ -15,9 +39,33 @@ svn:wc:ra_dav:version-url
 V 63
 /repos/!svn/ver/252/mattleaconsulting_www/assets/js/_README.txt
 END
+jquery.autocomplete.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/261/mattleaconsulting_www/assets/js/jquery.autocomplete.js
+END
 MLCSite.js
 K 25
 svn:wc:ra_dav:version-url
 V 62
-/repos/!svn/ver/259/mattleaconsulting_www/assets/js/MLCSite.js
+/repos/!svn/ver/261/mattleaconsulting_www/assets/js/MLCSite.js
+END
+jquery.onImagesLoad.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/261/mattleaconsulting_www/assets/js/jquery.onImagesLoad.js
+END
+jquery.scrollTo-min.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/261/mattleaconsulting_www/assets/js/jquery.scrollTo-min.js
+END
+ui.selectmenu.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/!svn/ver/261/mattleaconsulting_www/assets/js/ui.selectmenu.js
 END

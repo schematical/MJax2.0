@@ -15,10 +15,12 @@ class index extends MLCSiteForm{
 
         $this->arrCaseStudyPanels['pnlMJAXCaseStudyPanel'] = new MJAXCaseStudyPanel($this, 'pnlMJAXCaseStudyPanel');
         $this->arrCaseStudyPanels['pnlCOTRCaseStudyPanel'] = new COTRCaseStudyPanel($this, 'pnlCOTRCaseStudyPanel');
-        $this->arrCaseStudyPanels['pnlPBBCaseStudyPanel'] = new PBBCaseStudyPanel($this, 'pnlPBBCaseStudyPanel');
         $this->arrCaseStudyPanels['pnlTWCCaseStudyPanel'] = new TWCCaseStudyPanel($this, 'pnlTWCCaseStudyPanel');
+        $this->arrCaseStudyPanels['pnlPBBCaseStudyPanel'] = new PBBCaseStudyPanel($this, 'pnlPBBCaseStudyPanel');
         $this->arrCaseStudyPanels['pnlGymfinityCaseStudyPanel'] = new GymfinityCaseStudyPanel($this, 'pnlGymfinityCaseStudyPanel');
         $this->arrCaseStudyPanels['pnlDRCaseStudyPanel'] = new DRCaseStudyPanel($this, 'pnlDRCaseStudyPanel');
+        $this->arrCaseStudyPanels['pnlStadjCaseStudyPanel'] = new StadjCaseStudyPanel($this, 'pnlStadjCaseStudyPanel');
+        
 
         foreach($this->arrCaseStudyPanels as $pnlCaseStudy){
             $pnlCaseStudy->CreateNavButtons();
@@ -30,6 +32,7 @@ class index extends MLCSiteForm{
         $this->btnNext = new MJaxLinkButton($this, 'index_btnNext');
         $objPlugin = new MJaxScrollToPlugin($this, '#' . $strFirstControlId, array(), 1200);
         $objPlugin->SetTargetControl($this->MainWindow);
+        $objPlugin->UseFirstChild = true;
         $this->btnNext->AddAction(new MJaxClickEvent(), new MJaxPluginAction($objPlugin));
         //$this->btnNext->AddAction(new MJaxClickEvent(), new MJaxServerControlAction($this, 'btnNext_click'));
         $this->btnNext->Text = "my_portfolio/";

@@ -29,7 +29,11 @@
                 background:black;
                 /*font-family:'lucidia console';*/
                 font-family:'lucidia sans typewriter';
+                position:relative;
                 cursor:url('<?php _p(__VIRTUAL_DIRECTORY__ . __IMAGE_ASSETS__); ?>/cursors/bigPointer.png');
+            }
+            a{
+                color:#009900;
             }
             h1{
                 color:#009900;
@@ -54,16 +58,19 @@
             }
             #mainWindow{
                 margin:10Px;
-                /*overflow:auto;*/
+                overflow:hidden;
                 z-index:2000;
                 position:absolute;
+                border:thin #009900 solid;
+                background:black;
                 
             }
             #mainWindow_inner{
                 color:white;
-                padding:5Px;
+                padding:0Px;
                 position:relative;
             }
+            
             .cmdLineButton{
                 color:#009900;
             }
@@ -115,8 +122,8 @@
                 background:url('<?php _p(__VIRTUAL_DIRECTORY__ . __IMAGE_ASSETS__); ?>/icons/Twitter.png');
             }
              #contactIcon{
-                top:230Px;
-                left:630Px;
+                top:330Px;
+                left:730Px;
                 background:url('<?php _p(__VIRTUAL_DIRECTORY__ . __IMAGE_ASSETS__); ?>/icons/Contact.png');
             }
             #portfolioIcon{
@@ -133,6 +140,9 @@
                 width:100%;
                 height:34Px;
                 z-index:5000;
+            }
+            #MLCToolBar{
+                text-align:center;
             }
             #pnlMain{
                 border:thick solid red;
@@ -152,8 +162,11 @@
             }
             .caseStudyPanel_nav{
                 position:absolute;
-                bottom:5Px;
-
+                bottom:10Px;
+                left:0Px;
+            }
+            .vimTextDiv{
+                height:30px;
             }
             .img_w380{
                 width:390Px;
@@ -172,25 +185,19 @@
                 overflow:hidden;
             }
 
-            .scrollBar_holder{
-                width:10Px;
-                height:100%;
-                position:absolute;
-                right:0Px;
-                top:0Px;
-            }
 			.osX .jScrollPaneTrack {
-				background: url(<?php _p(__VIRTUAL_DIRECTORY__ . __IMAGE_ASSETS__); ?>/scrollBar/osx_track.gif) repeat-y;
+                background:black;
+				/*background: url(<?php _p(__VIRTUAL_DIRECTORY__ . __IMAGE_ASSETS__); ?>/scrollBar/osx_track.gif) repeat-y;*/
 			}
 			.osX .jScrollPaneDrag {
-				background: url(<?php _p(__VIRTUAL_DIRECTORY__ . __IMAGE_ASSETS__); ?>/scrollBar/osx_drag_middle.gif) repeat-y;
+				background: url(<?php _p(__VIRTUAL_DIRECTORY__ . __IMAGE_ASSETS__); ?>/scrollBar/mlc_drag_middle.png) repeat-y;
 			}
 			.osX .jScrollPaneDragTop {
-				background: url(<?php _p(__VIRTUAL_DIRECTORY__ . __IMAGE_ASSETS__); ?>/scrollBar/osx_drag_top.gif) no-repeat;
+				background: url(<?php _p(__VIRTUAL_DIRECTORY__ . __IMAGE_ASSETS__); ?>/scrollBar/mlc_drag_top.png) no-repeat;
 				height: 6px;
 			}
 			.osX .jScrollPaneDragBottom {
-				background: url(<?php _p(__VIRTUAL_DIRECTORY__ . __IMAGE_ASSETS__); ?>/scrollBar/osx_drag_bottom.gif) no-repeat;
+				background: url(<?php _p(__VIRTUAL_DIRECTORY__ . __IMAGE_ASSETS__); ?>/scrollBar/mlc_drag_bottom.png) no-repeat;
 				height: 7px;
 			}
 			.osX a.jScrollArrowUp {
@@ -220,7 +227,7 @@
 				left: 0;
 				right: auto;
 			}
-
+            
 
 			/* IE SPECIFIC HACKED STYLES */
 			* html .osX .jScrollPaneDragBottom {
@@ -229,7 +236,14 @@
 			/* /IE SPECIFIC HACKED STYLES */
             <?php $this->RenderCssClasses(); ?>
         </style>
+        <noscript>
+            <style>
+                #mainWindow{
+                    overflow:auto;
+                }
+            </style>
+        </noscript>
     </head>
     <body>
         <div id="bodyContent">
-            <div id="mainWindow" class="holder osX">
+            <div id="mainWindow"  class="holder osX">

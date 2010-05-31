@@ -1,15 +1,37 @@
 var MJax = {
+    ControlType:new Object(),
+    /*-------*/
     strCurrPageUrl:null,
     objCurrPostData:{},
     arrControls:new Array(),
+    blnFadeOnLoad:false,
     Init:function(){
     var arrLocationParts = document.location.toString().split("/");
         this.strCurrPageUrl = MJax.GetDocAncorLocation();
-
+        
         if(this.strCurrPageUrl != MJax.GetDocRealLocation()){
             document.location = this.strCurrPageUrl;
             return;
         }
+        MJax.AutoAdjustHeight(function(){});
+        
+        $('.MJaxLink').click(function(e){
+            var strHref = $(this).attr('href');
+            MJax.LoadMainPage(strHref, {action:'change_page'}, true);
+            e.preventDefault();
+        });
+        //Call back setup
+        this.funMainPageLoad = function(){};
+
+
+        //ControlSpecific
+        $('.MJaxLinkButton').each(function(){
+            var jThis = $(this);
+            jThis.data('href', jThis.attr('href'));
+            jThis.attr('href', 'javascript:');
+        });
+
+        
     },
     GetDocAncorLocation:function(){
         var arrLocationParts = document.location.toString().split("/");
@@ -24,7 +46,6 @@ var MJax = {
         }else{
            return arrCurrPageParts[1];
         }
-
     },
     GetDocRealLocation:function(){
         var arrLocationParts = document.location.toString().split("/");
@@ -43,7 +64,11 @@ var MJax = {
         document.location = this.GetDocRealLocation() + "#" + this.strCurrPageUrl;
 
     },
-    LoadMainPage:function(strUrl, objData){
+    LoadMainPage:function(strUrl, objData, blnFade){
+        if(blnFade == undefined){
+            blnFade = false;
+        }
+        MJax.blnFadeOnLoad = blnFade;
         this.strCurrPageUrl = strUrl;
         if(objData == undefined){
             this.objCurrPostData = {};
@@ -54,16 +79,20 @@ var MJax = {
         for(var i = 0; i < this.arrControls.length; i++){
             this.objCurrPostData[this.arrControls[i]] = $('#' + this.arrControls[i]).attr('value');
         }
-        /*
-        $("#mainWindow").animate(
-            {"height":"2Px"},
-            450,
-            MJax.LoadMainPageShrinkCallback
-        );*/
-        MJax.LoadMainPageShrinkCallback();
+        if(MJax.blnFadeOnLoad){
+            $("#mainWindow").animate(
+                {"height":"2Px"},
+                450,
+                MJax.LoadMainPageShrinkCallback
+            );
+        }else{
+            MJax.LoadMainPageShrinkCallback();
+        }
     },
     LoadMainPageShrinkCallback:function(){
-        $("#mainWindow").css('display','none');
+        if(MJax.blnFadeOnLoad){
+            $("#mainWindow").css('display','none');
+        }
         
         $.ajax({
               url: MJax.strCurrPageUrl,
@@ -103,30 +132,30 @@ var MJax = {
                 }
             }
         }
-        $("#mainWindow").css('display','block');
-        var strHeight = $("#mainWindow_inner").css('height');
-        var intHeight = parseInt(strHeight.replace('px', ''));
-        var strNewHeight = (intHeight + 20) + "Px";
-        /*
-        $("#mainWindow").animate(
-            {"height":strNewHeight},
-            450,
-            MJax.LoadMainPageGrowCallback
-        );*/
-        MJax.LoadMainPageGrowCallback();
+        if(MJax.blnFadeOnLoad){
+            MJax.AutoAdjustHeight(MJax.LoadMainPageGrowCallback);
+        }else{
+            MJax.LoadMainPageGrowCallback();
+        }
         MJax.UpdateDocLocation();
     },
     LoadMainPageGrowCallback:function(){
+       MJax.funMainPageLoad();
         //alert($("#mainWindow").css('height'));
     },
-    TriggerControlEvent:function(strControlId, strEvent){
+    TriggerControlEvent:function(objEvent, strSelector, strEvent){
+        var jTarget = $(objEvent.target);
+        
         var strFormState = $("#MJaxForm__FormState").attr('value');
         var objData = {
             action:'control_event',
-            control_id:strControlId,
+            control_id:jTarget.attr('id'),
             event:strEvent,
             MJaxForm__FormState:strFormState
-        };        
+        };
+        if(objEvent.type == 'keypress'){
+            objData.keyCode = objEvent.keyCode;
+        }
         MJax.LoadMainPage(MJax.strCurrPageUrl, objData);
     },
     ClearRegisteredControls:function(){
@@ -134,5 +163,33 @@ var MJax = {
     },
     RegisterControl:function(strControlId){
         this.arrControls[this.arrControls.length] = strControlId;
+    },
+    AutoAdjustHeight:function(funCallBack){
+        
+        var strHeight = $("#mainWindow_inner").css('height');
+        var intHeight = parseInt(strHeight.replace('px', ''));
+        var strNewHeight = (intHeight + 20) + "Px";
+
+        var strWidth = $("#mainWindow_inner").css('width');
+        var intWidth = parseInt(strWidth.replace('px', ''));
+        var strNewWidth = (intWidth+3) + "Px";
+        
+            $("#mainWindow").css('display','block');
+
+            $("#mainWindow").animate(
+                {"height":strNewHeight,"width":strNewWidth},
+                450,
+                funCallBack
+            );
     }
 };
+/*
+MJax.ControlType.ScrollBar = {
+    Init:function(){
+        var jParent = $('scrollBar_holder').parent();
+        jParent.css('width', jParent.css('width'));
+        var intScale = jParent.css('height');
+        $('scrollBar_slider').css('height', )
+    }
+};
+*/

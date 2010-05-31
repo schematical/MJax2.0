@@ -9,6 +9,18 @@ svn:wc:ra_dav:version-url
 V 97
 /repos/!svn/ver/249/mattleaconsulting_www/assets/images/screenShots/projectBoxBand.screenShot.png
 END
+DR.screenShot.png
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/!svn/ver/261/mattleaconsulting_www/assets/images/screenShots/DR.screenShot.png
+END
+Stadj.screenShot.png
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/!svn/ver/261/mattleaconsulting_www/assets/images/screenShots/Stadj.screenShot.png
+END
 COTR.screenShot.png
 K 25
 svn:wc:ra_dav:version-url
@@ -20,4 +32,16 @@ K 25
 svn:wc:ra_dav:version-url
 V 99
 /repos/!svn/ver/249/mattleaconsulting_www/assets/images/screenShots/theWisconsinCard.screenShot.png
+END
+Gymfinity.screenShot.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/!svn/ver/261/mattleaconsulting_www/assets/images/screenShots/Gymfinity.screenShot.png
+END
+MJax.screenShot.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/261/mattleaconsulting_www/assets/images/screenShots/MJax.screenShot.png
 END

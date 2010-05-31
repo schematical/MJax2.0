@@ -1,23 +1,11 @@
 K 25
 svn:wc:ra_dav:version-url
 V 55
-/repos/!svn/ver/252/mattleaconsulting_www/assets/js/MLC
+/repos/!svn/ver/261/mattleaconsulting_www/assets/js/MLC
 END
-MLCMapPanel.js
+MLCChat.js
 K 25
 svn:wc:ra_dav:version-url
-V 70
-/repos/!svn/ver/252/mattleaconsulting_www/assets/js/MLC/MLCMapPanel.js
-END
-MLC.js
-K 25
-svn:wc:ra_dav:version-url
-V 62
-/repos/!svn/ver/257/mattleaconsulting_www/assets/js/MLC/MLC.js
-END
-MLCCaseStudyPanel.js
-K 25
-svn:wc:ra_dav:version-url
-V 76
-/repos/!svn/ver/252/mattleaconsulting_www/assets/js/MLC/MLCCaseStudyPanel.js
+V 66
+/repos/!svn/ver/261/mattleaconsulting_www/assets/js/MLC/MLCChat.js
 END
