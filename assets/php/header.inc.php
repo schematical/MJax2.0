@@ -162,8 +162,9 @@
             }
             .caseStudyPanel_nav{
                 position:absolute;
-                bottom:10Px;
+                bottom:15Px;
                 left:0Px;
+                font-size:18Pt;
             }
             .vimTextDiv{
                 height:30px;
