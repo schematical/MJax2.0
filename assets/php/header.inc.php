@@ -1,5 +1,20 @@
 <html>
     <head>
+        <!---
+        ///         ///   ///         /////////
+        //////   //////   ///         ///
+        ///   ///   ///   ///         ///
+        ///         ///   ///         ///
+        ///         ///   /////////   /////////
+        I wanted to put some cool ASCII art here but I didn't so... yeah
+        Check out my response headers for some more fun
+
+
+
+
+
+
+        -->
         <!-- MJax Core scripts -->
         <script language="javascript" src="<?php _p(__VIRTUAL_DIRECTORY__ . __JS_ASSETS__); ?>/MLCSite.js"></script>
         <script language="javascript" src="<?php _p(__VIRTUAL_DIRECTORY__ . __JS_ASSETS__); ?>/_core/MJax.js"></script>
@@ -16,8 +31,9 @@
         <link rel="stylesheet" type="text/css" href="/assets/css/demoStyles.css"/>
         <link rel="stylesheet" type="text/css" href="/assets/css/jScrollPane.css"/>
 
-
-        
+<?php if (!is_null($this->strTitle)) { ?>
+		<title><?= $this->strTitle; ?></title>
+<?php } ?>
 
         <?php $this->RenderHeaderAssets(); ?>
         <script language="javascript">
