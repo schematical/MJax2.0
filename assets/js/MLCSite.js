@@ -66,7 +66,8 @@ var MLCSite = {
         var strPage = $(this).attr('page');
         if(strPage != undefined){
             //TODO: Fix this!
-            if(($.browser.msie) || (strPage = 'index')){
+            //alert("Redirecting: " + ($.browser.msie)?'I suck<msie>':'not MSIE');
+            if(($.browser.msie) || (strPage == 'index')){
                 document.location = "/" + strPage + ".php";
             }else{
                 MJax.LoadMainPage("/" + strPage + ".php", {action:'change_page'},true);

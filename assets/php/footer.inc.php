@@ -7,6 +7,8 @@
             <?php //$this->pnlDesignersIcon->Render(); ?>
             <?php $this->pnlTwitterIcon->Render(); ?>
             <?php $this->pnlLabIcon->Render(); ?>
+            <?php $this->pnlFlickrIcon->Render(); ?>
+            <?php $this->pnlYoutubeIcon->Render(); ?>
         </div>
         <div id="MLCToolBar_holder">
             <?php require(__DOCROOT__ . __PHP_ASSETS__ . '/glowBoarder/glowBoarder_start.inc.php'); ?>

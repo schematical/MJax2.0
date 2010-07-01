@@ -133,12 +133,22 @@
                 background:url('<?php _p(__VIRTUAL_DIRECTORY__ . __IMAGE_ASSETS__); ?>/icons/Lab.png');
             }
             #twitterIcon{
-                top:230Px;
-                left:730Px;
+                top:30Px;
+                left:630Px;
                 background:url('<?php _p(__VIRTUAL_DIRECTORY__ . __IMAGE_ASSETS__); ?>/icons/Twitter.png');
             }
-             #contactIcon{
-                top:330Px;
+            #youtubeIcon{
+                top:130Px;
+                left:630Px;
+                background:url('<?php _p(__VIRTUAL_DIRECTORY__ . __IMAGE_ASSETS__); ?>/icons/Youtube.png');
+            }
+            #flickrIcon{
+                top:230Px;
+                left:630Px;
+                background:url('<?php _p(__VIRTUAL_DIRECTORY__ . __IMAGE_ASSETS__); ?>/icons/Flickr.png');
+            }
+            #contactIcon{
+                top:230Px;
                 left:730Px;
                 background:url('<?php _p(__VIRTUAL_DIRECTORY__ . __IMAGE_ASSETS__); ?>/icons/Contact.png');
             }
