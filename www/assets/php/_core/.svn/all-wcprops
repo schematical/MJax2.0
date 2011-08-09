@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/!svn/ver/356/MFB_new/trunk/www/assets/default/php/_core
+END
+error_page.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/356/MFB_new/trunk/www/assets/default/php/_core/error_page.php
+END
+profile.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/!svn/ver/356/MFB_new/trunk/www/assets/default/php/_core/profile.php
+END
+error_already_rendered_page.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/!svn/ver/356/MFB_new/trunk/www/assets/default/php/_core/error_already_rendered_page.php
+END
+image.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/!svn/ver/356/MFB_new/trunk/www/assets/default/php/_core/image.php
+END
+QFileAssetDialog.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/!svn/ver/356/MFB_new/trunk/www/assets/default/php/_core/QFileAssetDialog.tpl.php
+END
+calendar.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/!svn/ver/356/MFB_new/trunk/www/assets/default/php/_core/calendar.php
+END
+MJaxUploadPanel.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/!svn/ver/356/MFB_new/trunk/www/assets/default/php/_core/MJaxUploadPanel.php
+END
+image_label.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/!svn/ver/356/MFB_new/trunk/www/assets/default/php/_core/image_label.php
+END
+image_base.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/!svn/ver/356/MFB_new/trunk/www/assets/default/php/_core/image_base.php
+END
+QFileAsset.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/!svn/ver/356/MFB_new/trunk/www/assets/default/php/_core/QFileAsset.tpl.php
+END

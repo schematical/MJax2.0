@@ -1,0 +1,2 @@
+<mjax>
+    <controls>
